@@ -326,7 +326,7 @@
 			<!-- !BOLD -->
 			<zone name="stylistic.typography.weight">
 				<starts-with>
-					<expression>([\*_]{2})(?=[a-zA-Z0-9])</expression>
+					<expression>([\*_]{2})(?=\S)</expression>
 					<capture number="1" name="delimiter.balanced.begin"/>
 				</starts-with>
 				<ends-with>
@@ -343,7 +343,7 @@
 			<!-- !ITALIC -->
 			<zone name="stylistic.typography.variant.slant">
 				<starts-with>
-					<expression>([\*_])(?=[a-zA-Z0-9])</expression>
+					<expression>([\*_])(?=\S)</expression>
 					<capture number="1" name="delimiter.balanced.begin"/>
 				</starts-with>
 				<ends-with>
